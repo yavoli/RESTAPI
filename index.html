@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişi Ekle</title>
+</head>
+<body>
+    <h1>Kişi Ekleme Formu</h1>
+    <form action="/add-person" method="post">
+        <label for="adi">Adı:</label><br>
+        <input type="text" id="adi" name="adi" required><br><br>
+        <label for="soyadi">Soyadı:</label><br>
+        <input type="text" id="soyadi" name="soyadi" required><br><br>
+        <label for="tel">Telefon:</label><br>
+        <input type="text" id="tel" name="tel" required><br><br>
+        <label for="tel_2">İkinci Telefon:</label><br>
+        <input type="text" id="tel_2" name="tel_2"><br><br>
+        <label for="adres">Adres:</label><br>
+        <textarea id="adres" name="adres" required></textarea><br><br>
+        <input type="submit" value="Ekle">
+    </form>
+    <br>
+    <form action="/list-persons" method="get">
+        <button type="submit">Kayıtlı Kişileri Listele</button>
+    </form>
+</body>
+</html>
